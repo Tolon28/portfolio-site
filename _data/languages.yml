@@ -1,0 +1,27 @@
+en:
+  href: /
+  link_text: in English
+  intro_text: |-
+    Hobbyist developer,
+    informatics student @ TalTech
+  projects_text: Projects
+#  projects:
+#    - title: freeCodeCamp front-end course
+#      description: >-
+#        Completed front-end development,
+#        now considered a legacy course and certificate.
+#        Projects for it can be found on my codepen.
+
+ee:
+  href: ee
+  link_text: eesti keeles
+  intro_text: |-
+    Arendaja hobina,
+    informaatikatudeng TalTechis
+  projects_text: Projektid
+#  projects:
+#    - title: freeCodeCamp front-end kursus
+#      description: >-
+#        Lõpetatud front-end arendamine,
+#        kursus ja tunnistus on nüüd legacy.
+#        Selle jooksul tehtud projektid saadaval codepen-is.

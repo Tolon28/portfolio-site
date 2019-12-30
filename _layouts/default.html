@@ -1,0 +1,53 @@
+{% assign translation = site.data.languages[page.lang] %}
+<html lang="{{page.lang}}">
+<head>
+    <title>Lauri Kask</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- favicon section -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end favicon section -->
+</head>
+<body>
+<header>
+    {% for lang in site.data.languages %}
+        {% if lang[0] != page.lang %}
+            <div class="container-language"><a href="{{lang[1].href}}">{{lang[1].link_text}}</a></div>
+        {% endif %}
+    {% endfor %}
+    <div class="container-intro">
+        <h1>Lauri Kask</h1>
+        <p class="description">{{translation.intro_text | newline_to_br}}</p>
+        <a href="mailto:lauri@laurikask.com">lauri@laurikask.com</a>
+        <div class="container-social">
+            <a class="icon-github icon" href="https://github.com/Tolon28" target="_blank"></a>
+            <a class="icon-linkedin icon" href="https://www.linkedin.com/in/lauri-kask-2b4850147/" target="_blank"></a>
+            <a class="icon-codepen icon" href="https://codepen.io/Tolon28" target="_blank"></a>
+        </div>
+    </div>
+    {% if translation.projects %}
+    <div class="container-projects-link">
+        <a href="#projects"><div class="down-arrow"></div></a>
+    </div>
+    {% endif %}
+</header>
+{% if translation.projects %}
+<div class="container-content">
+    <section id="projects">
+        <h2>{{translation.projects_text}}</h2>
+        {% for project in translation.projects %}
+            <h3>{{project.title}}</h3>
+            <div>
+                {{project.description}}
+            </div>
+        {% endfor %}
+    </section>
+</div>
+{% endif %}
+</body>
+</html>
