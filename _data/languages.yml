@@ -2,8 +2,7 @@ en:
   href: /
   link_text: in English
   intro_text: |-
-    Hobbyist developer,
-    informatics student @ TalTech
+    Developer
   projects_text: Projects
 #  projects:
 #    - title: freeCodeCamp front-end course
@@ -16,8 +15,7 @@ ee:
   href: ee
   link_text: eesti keeles
   intro_text: |-
-    Arendaja hobina,
-    informaatikatudeng TalTechis
+    Arendaja
   projects_text: Projektid
 #  projects:
 #    - title: freeCodeCamp front-end kursus
